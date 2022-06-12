@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kdam+Thmor+Pro&family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;700&display=swap');
+
+body{
+    margin: 0 auto;
+    font: 16px/26px 'Rubik', sans-serif;
+    font-weight: 400;
+    color:#465a64;
+    background: #e6ffe6;
+}
+
+#albums{
+    list-style: none;
+}
+
+.album_title{
+    position: relative;
+}
+
+.album_title::before{
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: -20px;
+        height: 12px;
+        border: 1px solid #546e7a;
+        transform: rotate(90deg);
+}
