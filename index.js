@@ -8,6 +8,11 @@ const getAlbums = async () => {
             li.innerHTML = element.title;
             li.className = 'album_title';
             contentNode.append(li);
+
+            let button = document.createElement('button');
+            button.className = 'button_close'
+            li.append(button)
+            button.append('x')
         });
     } catch (error) {
         console.error(error);
@@ -15,3 +20,13 @@ const getAlbums = async () => {
 }
 
 getAlbums()
+
+const titleList = document.querySelector('#albums');
+
+titleList.addEventListener('click', (event) => {
+    const closeButton = event.target.className === 'button_close';
+    if (closeButton) {
+        const liRow = event.target.closest('.album_title');
+        liRow.remove();
+    }
+});

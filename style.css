@@ -25,3 +25,14 @@ body{
         border: 1px solid #546e7a;
         transform: rotate(90deg);
 }
+
+.button_close{
+    cursor: pointer;
+    margin: 0px 0px 0px 10px;
+    border-radius: 20%;
+    border: 1px;
+    background-color: #29627c4d;
+    position: absolute;
+    top: 5px;
+    color: #fefefe;
+}
