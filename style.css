@@ -36,3 +36,7 @@ body{
     top: 5px;
     color: #fefefe;
 }
+
+.button_close:hover{
+    background-color: #15313d5b;
+}
